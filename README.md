@@ -359,14 +359,18 @@ psi20-ai-market-analysis/
 
 # Development Notes
 
-The Jupyter Notebooks contain the original research and experimentation workflow, including exploratory analysis, model development, testing, and validation.
+The Jupyter Notebooks contain the implementation and execution workflow for the final forecasting and multi-agent analysis pipelines included in this repository.
+
+They also include selected validation and experimentation steps, such as the validation of the parameter used to determine regime accuracy, where the regime threshold is defined as a multiple of volatility.
+
+However, the notebooks do not represent the complete history of the project's research and experimentation. Several approaches explored during the internship, including traditional ARIMA and ARIMA-GARCH models, are not included. The notebooks are primarily focused on the selected final pipeline and its execution rather than documenting every alternative model, exploratory analysis, or development experiment conducted during the project.
 
 For application-oriented execution, the core forecasting and agent functionality was refactored into Python modules:
 
 * `Forecasting.py`
 * `Agents_Runner.py`
 
-This separation allows the Streamlit interface and the main script to use the core functionality without depending on the complete exploratory notebook workflow.
+This separation allows the Streamlit interface and the main script to use the core functionality without depending on the notebook-based workflow.
 
 ---
 
